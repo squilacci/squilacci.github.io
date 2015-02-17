@@ -1,0 +1,243 @@
+/*------------ RESET STYLES --------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*----------------------------------------*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #30373d;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:active {
+  color: #30ad63;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 100px;
+  background-color: rgba(38, 43, 47, 0.9);
+  color: #aaa;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+footer {
+  background-color: #262b2f;
+  color: #434a50;
+  font-size: 0.8em;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-nav {
+  float: right;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+
+header li {
+  display: inline;
+  font-size: 0.8em;
+  margin-right: 15px;
+}
+
+.separator {
+  color: #444;
+}
+
+.logo {
+  color: #fff;
+  background-color: #30ad63;
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5px 14px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  float: left;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.post img {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-out 0;
+  transition: all 0.2s ease-out 0;
+}
+
+.post img:hover {
+  opacity: 0.8;
+}
+
+.post {
+  background-color: #fff;
+  color: #30373d;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font: bold 2.2em/1.2em "Open Sans", sans-serif;
+  text-align: center;
+  margin: 20px 100px 15px;
+}
+
+h1:hover {
+  color: #30ad63;
+}
+
+.text {
+  padding: 40px 100px 80px;
+  font: 1.2em/1.8em "PT Serif", serif;
+}
+
+.text p {
+  margin-bottom: 50px;
+}
+
+.text p a {
+  color: #30ad63;
+}
+
+.text p a:hover {
+  text-decoration: underline;
+}
+
+.post-info {
+  font: 10pt "Open Sans", sans-serif;
+  color: #30ad63;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.post-info li {
+  margin-right: 5px;
+  display: inline;
+}
+
+.post-info .separator {
+  color: #ddd;
+}
+
+.post-info li:last-child {
+  margin-right: 0px;
+}
+
+.button {
+  background-color: #adb3b8;
+  color: #fff;
+  width: 100px;
+  padding: 10px;
+  font: 0.8em "Open Sans", sans-serif;
+  border-radius: 5px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #30ad63;
+}
+
+
+.quote {
+  width: 100%;
+  background: #000 url(../img/postimg-quote.jpg) no-repeat right bottom;
+  margin-bottom: 100px;
+}
+
+.quote .text {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 40px 60px;
+  font-size: 1.8em;
+  font-style: italic;
+  text-align: center;
+}
+
+.quote .text .post-info {
+  margin-bottom: 10px;
+}
+
+  
+
+  /*--------Clearfix--------*/
+
+  .group::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
