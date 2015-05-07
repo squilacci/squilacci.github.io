@@ -64,8 +64,9 @@ a {
 }
 
 body {
-  font-family: "Museo Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .container {
@@ -144,8 +145,13 @@ header li {
   background-size: cover;
 }
 
+p {
+  font-size: 1.125em;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
 h1 {
-  font-family: 'Museo Sans Rounded', sans-serif;
   font-size: 3.1em;
   font-weight: 500;
   margin-bottom: 20px;
@@ -154,7 +160,6 @@ h1 {
 h2 {
   font-size: 2.6em;
   font-weight: 500;
-  font-family: 'Museo Sans Rounded', sans-serif;
   line-height: 1.2;
   margin-bottom: 35px;
 }
@@ -294,12 +299,6 @@ h5 {
 
 .text-block a:hover {
   color: #f4ad32;
-}
-
-p {
-  font-size: 1.125em;
-  margin-bottom: 25px;
-  line-height: 1.4;
 }
 
 .slider-image {
