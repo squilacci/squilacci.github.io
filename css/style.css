@@ -91,7 +91,7 @@ header {
   display: none;
 }
 
-.nav-item:hover {
+.nav-item:hover, .nav-item:active {
   border-bottom: 2px solid #f4ad32;
 }
 
@@ -159,6 +159,7 @@ h1 {
 
 h2 {
   font-size: 2.6em;
+  color: #666;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -204,7 +205,7 @@ h5 {
   border-right: 1px solid #3c4653;
 }
 
-.percent-down {
+.percent-down, .q-mark {
   color: #e21b1b;
 }
 
@@ -232,6 +233,27 @@ h5 {
   color: #666;
   float: left;
   max-width: 545px;
+}
+
+.full-text-block {
+  color: #666;
+  width: 100%;
+  font-size: 0.875em;
+}
+
+.question {
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.full-text-block h2 {
+  margin-bottom: 50px;
+}
+
+.answer {
+  background-color: #ebf7ff;
+  padding: 30px;
+  line-height: 1.6;
 }
 
 .white-block {
@@ -297,7 +319,11 @@ h5 {
   font-size: 1.125em;
 }
 
-.text-block a:hover {
+.full-text-block a {
+  color: #3191bd;
+}
+
+.text-block a:hover, .full-text-block a:hover {
   color: #f4ad32;
 }
 
