@@ -70,7 +70,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 960px;
   margin: auto;
 }
 
@@ -97,7 +97,7 @@ header {
 
 .login-btn, .navigation {
   float: right;
-  margin-left: 30px;
+  margin-left: 10px;
   
 }
 
@@ -116,7 +116,7 @@ header {
 .logo img {
   height: 30px;
   width: auto;
-  margin-right: 80px;
+  margin-right: 40px;
 }
 
 .logo {
@@ -125,7 +125,7 @@ header {
 }
 
 header li {
-  margin-right: 30px;
+  margin-right: 25px;
   display: inline;
 }
 
@@ -176,6 +176,7 @@ h4 {
   font-size: 1.25em;
   text-transform: uppercase;
   margin-bottom: 15px;
+  font-weight: 400;
 }
 
 h5 {
@@ -195,7 +196,7 @@ h5 {
 
 .stocks-cell {
   float: left;
-  width: 11.111%;
+  width: 14.285%;
   padding: 10px;
   height: 60px;
   border-left: 1px solid #3c4653;
@@ -232,7 +233,7 @@ h5 {
 .text-block {
   color: #666;
   float: left;
-  max-width: 545px;
+  max-width: 460px;
 }
 
 .full-text-block {
@@ -278,7 +279,7 @@ h5 {
 .text-block-right {
   color: #666;
   float: right;
-  max-width: 635px;
+  max-width: 460px;
 }
 
 .features-block p {
@@ -289,6 +290,7 @@ h5 {
   width: 33.333%;
   text-align: center;
   float: left;
+  padding: 0 20px;
 }
 
 .feature img {
@@ -298,7 +300,6 @@ h5 {
 }
 
 #iphone {
-  margin-left: 100px;
   vertical-align: bottom;
   margin-bottom: -100px;
 }
@@ -329,6 +330,8 @@ h5 {
 
 .slider-image {
   box-shadow: 0px 1px 12px #eee;
+  width: 460px;
+  height: auto;
   float: right;
 }
 
@@ -419,7 +422,6 @@ footer {
 input[type=button] {
     background:url(../img/search-icon.png);
     border: 0;
-
     height: 20px;
     width: 20px;
 }
@@ -442,82 +444,29 @@ input[type=button] {
 
 /* ----- Media Queries ----- */
 
-@media screen and (max-width: 1220px) {
-  
+@media screen and (max-width: 960px) { 
+
   .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
   }
   
-  .cells > :last-child {
-    display: none;
-  }
-  
-  .cells > :nth-child(8) {
-    border-right: 1px solid #3c4653;
-  }
-  
-  .stocks-cell {
-    width: 12.5%;
-  }
-  
-  .logo img {
-    margin-right: 40px;
+  .cells {
+    padding-left: 0;
+    padding-right: 0;
   }
   
   header li {
-    margin-right: 20px;
+    margin-right: 15px;
   }
   
   .text-block {
-    max-width: 460px;
+    max-width: 400px;
   }
-  
-  .text-block-right {
-    max-width: 500px;
-  }
-  
-  h2 {
-  font-size: 2.3em;
   
 }
 
-@media screen and (max-width: 1120px) {
-  
-  .cells > :nth-child(8) {
-    display: none;
-  }
-  
-  .cells > :nth-child(7) {
-    border-right: 1px solid #3c4653;
-  }
-  
-  .stocks-cell {
-    width: 14.28%;
-  }
-  
-  #iphone {
-    margin-left: 0px;
-  }
-  
-  .text-block {
-    max-width: 360px;
-  }
-  
-  p {
-    font-size: 1.1em;
-    line-height: 1.3;
-  }
-  
-  .slider-image {
-    width: 500px;
-    height: auto;
-  }
- 
-}
-  
-@media screen and (max-width: 980px) {
-  
+@media screen and (max-width: 940px) { 
+    
   .cells > :nth-child(7) {
     display: none;
   }
@@ -527,35 +476,9 @@ input[type=button] {
   }
   
   .stocks-cell {
-    width: 16.66%;
+    width: 16.666%;
   }
   
-  header li {
-    margin-right: 15px;
-  }
-  
-  #iphone {
-    margin-left: 0px;
-  }
-  
-  .text-block {
-    max-width: 100%;
-  }
-  
-  .slider-image {
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-  }
-  
-  .login-btn, .navigation {
-    margin-left: 20px;
-  }
- 
-}
-  
-@media screen and (max-width: 940px) { 
-    
   .nav-icon {
     display: inline;
   }
@@ -570,6 +493,15 @@ input[type=button] {
   
   .text-block-right {
     max-width: 360px;
+  }
+  
+  .text-block, .slider-image {
+    max-width: 100%;
+  }
+  
+   .slider-image {
+    width: 100%;
+     margin-top: 50px;
   }
   
 }
