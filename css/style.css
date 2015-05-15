@@ -257,6 +257,11 @@ h5 {
   line-height: 1.6;
 }
 
+.answer h4 {
+  text-align: center;
+  margin-top: 10px;
+}
+
 .white-block {
   background-color: #fff;
   padding-top: 100px;
@@ -393,6 +398,10 @@ footer {
 
 .fa-caret-up {
   color: #15c87e;
+}
+
+.follow a {
+  margin-left: 10px;
 }
 
 /* ----- Search Form ----- */
