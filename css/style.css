@@ -190,13 +190,6 @@ header li {
   margin-bottom: 20px;
 }
 
-.stocks {
-  width: 100%;
-  height: 60px;
-  background-color: #283341;
-  color: #fff;
-}
-
 .hero-image {
   width: 100%;
   height: 550px;
@@ -240,12 +233,15 @@ h4 {
 }
 
 h5 {
-  font-size: 0.875em;
+  font-size: 0.75em;
 }
 
-.stocks-cell h5 {
-  display: inline-block;
-  margin-right: 8px;
+.stocks {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  color: #fff;
+  padding-top: 10px;
 }
 
 .stocks-cell p {
@@ -256,15 +252,78 @@ h5 {
 
 .stocks-cell {
   float: left;
-  width: 14.285%;
-  padding: 10px;
-  height: 60px;
-  border-left: 1px solid #3c4653;
+  margin-right: 10px;
 }
 
-.cells > :last-child {
-  border-right: 1px solid #3c4653;
+.stocks-cell:hover {
+  opacity: 0.8;
 }
+
+.cell-top {
+  padding-top: 10px;
+  background-color: #283341;
+  width: 82px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 0px;
+}
+
+.cell-bottom-red {
+  color: #fff;
+  margin-top: 1px;
+  padding-top: 2px;
+  background-color: #ed2e2e;
+  width: 82px;
+  height: 29px;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.cell-bottom-green {
+  color: #fff;
+  margin-top: 1px;
+  padding-top: 2px;
+  background-color: #15c87e;
+  width: 82px;
+  height: 29px;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.cell-bottom-red p, .cell-bottom-green p {
+  color: #fff;
+}
+
+.stocks-icons {
+  background-color: #fff;
+  height: 80px;
+  border-left: 1px solid #e7ecf2;
+  float: right;
+}
+
+.stocks-icons div {
+  background-color: #cfd5db;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#stocks-settings {
+  padding: 4px 5px;
+}
+
+.stocks-icons div:hover {
+  background-color: #318abd;
+}
+
+.stocks-arrow {
+  margin-top: 4px;
+  padding: 4px 9px;
+}
+
 
 .percent-down, .q-mark {
   color: #e21b1b;
@@ -586,10 +645,6 @@ h5 {
   margin: 0px 8px 5px 8px;
 }
 
-
-
-
-
 footer {
   background-color: #f1f1f1;
   width: 100%;
@@ -640,14 +695,6 @@ footer {
   color: #999;
   font-size: 0.75em;
   margin-top: 40px;
-}
-
-.fa-caret-down {
-  color: #e21b1b;
-}
-
-.fa-caret-up {
-  color: #15c87e;
 }
 
 .follow a {
@@ -709,10 +756,13 @@ input[type=button] {
     padding: 0 30px;
   }
   
-  .cells {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  .column-620 {
+    max-width: 65%;
+}
+  
+  feed-item hr, .thumbnail-big {
+  width: 100%;
+}
   
   header li {
     margin-right: 15px;
@@ -725,19 +775,7 @@ input[type=button] {
 }
 
 @media screen and (max-width: 940px) { 
-    
-  .cells > :nth-child(7) {
-    display: none;
-  }
-  
-  .cells > :nth-child(6) {
-    border-right: 1px solid #3c4653;
-  }
-  
-  .stocks-cell {
-    width: 16.666%;
-  }
-  
+     
   .nav-icon {
     display: inline;
   }
@@ -767,18 +805,6 @@ input[type=button] {
   
 @media screen and (max-width: 850px) { 
     
-  .cells > :nth-child(6) {
-    display: none;
-  }
-  
-  .cells > :nth-child(5) {
-    border-right: 1px solid #3c4653;
-  }
-  
-  .stocks-cell {
-    width: 20%;
-  }
-  
   .hero-image {
     height: 500px;
     padding-top: 140px;
@@ -787,18 +813,6 @@ input[type=button] {
 }
   
 @media screen and (max-width: 750px) { 
-  
-  .cells > :nth-child(5) {
-    display: none;
-  }
-  
-  .cells > :nth-child(4) {
-    border-right: 1px solid #3c4653;
-  }
-  
-  .stocks-cell {
-    width: 25%;
-  }
   
   .nav-icon {
     display: inline;
