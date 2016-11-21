@@ -18,7 +18,7 @@ html {
 .content {
   width: 60%;
   margin: auto;
-  padding-top: 300px; 
+  padding-top: 20vh;
 }
 
 .wrap {
@@ -40,7 +40,7 @@ footer {
   padding: 50px;
 }
 
-h1 { 
+h1 {
   font-family: 'Gotham Black', Arial, Helvetica;
   font-size: 3.75em;
 }
@@ -128,16 +128,17 @@ h1 {
 @media (max-width: 1700px) {
   .content {
     width: 75%;
-    margin: auto; 
+    margin: auto;
+    padding-top: 8vh;
   }
 }
 
 @media (max-width: 1300px) {
   .col-1 {
-    display: none; 
+    display: none;
   }
   .col-2 {
-    width: 100%; 
+    width: 100%;
   }
   h1 {
     text-align: center;
@@ -147,7 +148,7 @@ h1 {
     margin: 20px auto;
   }
   .content {
-    padding-top: 200px; 
+    padding-top: 5vh;
   }
 }
 
@@ -161,7 +162,8 @@ h1 {
     width: 100%;
     text-align: center;
   }
-  .main-nav {
+  .main-nav,
+  .footer-nav {
     margin-top: 50px;
   }
   .footer-nav li:first-child,
@@ -174,9 +176,8 @@ h1 {
   }
   .content {
     width: 80%;
-    padding-top: 150px; 
   }
-  
+
 }
 
 @media (max-width: 440px) {
@@ -184,5 +185,5 @@ h1 {
     margin-bottom: 20px;
     margin-left: 0px;
   }
-  
+
 }
